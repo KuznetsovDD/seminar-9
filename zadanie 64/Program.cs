@@ -5,13 +5,13 @@
 // N = 8 -> "8, 7, 6, 5, 4, 3, 2, 1"
 
 
-int GetNum(int num)
+string GetNum(int num, int num2)
 {
-    int num2=1;
     if(num==num2)
     {
-        return 1;
+        return num2.ToString();
     }
-    return (num  + GetNum(num-1));
+    return (num +" "+ GetNum(num-1,1));
 }
-System.Console.WriteLine(GetNum(5));
+System.Console.WriteLine(GetNum(5,1));
+
