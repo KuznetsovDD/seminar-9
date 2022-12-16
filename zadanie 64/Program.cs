@@ -14,4 +14,4 @@ int GetNum(int num)
     }
     return (num  + GetNum(num-1));
 }
-System.Console.WriteLine(GetNum(4));
+System.Console.WriteLine(GetNum(5));
